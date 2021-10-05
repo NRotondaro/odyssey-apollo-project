@@ -8,7 +8,7 @@ const resolvers = {
   },
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
-      return dataSources.trackAPI.getTracksForHome(authorId);
+      return dataSources.trackAPI.getAuthor(authorId);
     },
   },
 };
