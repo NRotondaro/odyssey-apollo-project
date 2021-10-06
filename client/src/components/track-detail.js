@@ -55,8 +55,8 @@ const TrackDetail = ({ track }) => {
           </DetailItem>
           <DetailItem>
             <h4>Author</h4>
-            <AuthorImage src={author.photo} />
-            <AuthorName>{author.name}</AuthorName>
+            <AuthorImage src={author?.photo} />
+            <AuthorName>{author?.name}</AuthorName>
           </DetailItem>
           <div>
             <StyledLink to={`./module/${modules[0]['id']}`}>

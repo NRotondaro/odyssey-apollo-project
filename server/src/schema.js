@@ -4,6 +4,13 @@ const typeDefs = gql`
   type Query {
     tracksForHome: [Track!]!
     track(id: ID!): Track
+    "Fetch a specific module, provided a module's ID"
+    module(id: ID!): Module!
+  }
+
+  type Module {
+    content: String
+    videoUrl: String
   }
 
   type Mutation {
